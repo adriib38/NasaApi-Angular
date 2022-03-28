@@ -1,0 +1,29 @@
+
+<header>
+
+  <h2>Nasa info.api</h2>
+  <h4>42</h4>
+
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="#" (click)="ponerSeleccionado('foto')">Foto Diaria</a>
+      <a href="#" (click)="ponerSeleccionado('tierra')">Satelite</a>
+    </li>
+  </ul>
+</nav>
+
+<article>
+  <app-foto-del-dia *ngIf="estaSeleccionado('foto')"></app-foto-del-dia>
+  <app-tierra-pantalla *ngIf="estaSeleccionado('tierra')"></app-tierra-pantalla>
+</article>
+
+
+<br>
+<footer>
+  <br>
+  <p>Adrián Benítez, 2022.</p>
+  <br>
+</footer>

@@ -1,0 +1,18 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-4">
+            <p>Fecha: <input [(ngModel)]="nuevaSolicitud.fecha" type="date" min="{{primerDia}}" max="{{ultimoDia}}" value="2021-12-01"></p>
+            <p>Lat: <input [(ngModel)]="nuevaSolicitud.lat" type="number" class="form-control" placeholder="39,4702"></p>
+            <p>Long: <input [(ngModel)]="nuevaSolicitud.long" type="number" class="form-control" placeholder="-0,37"></p>
+            <p>Dimensión: <input [(ngModel)]="nuevaSolicitud.dim" type="number" class="form-control" placeholder="0,1"></p>
+            <br>
+            <button type="button" class="btn btn-info btn-lg" [disabled]="!dibujarBoton()" (click)="btnNuevaSolicitud()">Ir!</button>
+        </div>
+        <div class="col-4">
+            <h3>Acerca de esta teconlogia:</h3>
+            <p>Este endpoint recupera la imagen de Landsat 8 para la ubicación y la fecha proporcionadas. La respuesta incluirá la fecha y la URL de la imagen más cercana a la fecha proporcionada. Es posible que el recurso solicitado no esté disponible para la fecha exacta de la solicitud. Puede recuperar un JSON que contenga las entradas que proporcionó y una URL a la imagen resultante a través del punto final de activos. El extremo de activos ya no muestra una lista de imágenes potenciales dentro de su rango de fechas debido a un cambio en el lado de la API de Google Earth Engine.</p>
+            <a href="https://api.nasa.gov/#earth" target="_blanck">Más información</a>
+            
+        </div> 
+    </div>
+</div>

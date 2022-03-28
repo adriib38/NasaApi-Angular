@@ -1,0 +1,35 @@
+<hr class="my-2">
+
+<div *ngIf="respuestaLista" class="form-group">
+
+    <div class="row">
+        <div class="col-5">
+            <h3>Imagen satelite: </h3>
+            <p><img [src]="respuesta.url" download width="500"></p>  
+        </div>
+        <div class="col-3">
+            <h5>
+                {{respuesta.id}}
+            </h5>
+            <p class="lead">
+                {{respuesta.date}}
+            </p>
+            <a [href]="respuesta.url" download><button type="button" class="btn btn-primary" data-toggle="button">Ver en grande</button></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

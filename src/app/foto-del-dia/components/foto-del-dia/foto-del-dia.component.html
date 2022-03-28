@@ -1,0 +1,18 @@
+<div class="jumbotron">
+    <input type="date" (change)="cambiarFecha($event)" min="{{primerDia}}" max="{{hoy}}" value="{{hoy}}">
+
+
+    <h1 class="display-3">{{foto.title}}</h1>
+    <p class="lead">{{foto.explanation}}</p>
+    <p>Hoy, {{foto.date}} </p>
+    <hr class="my-2">
+    <p><img [src]="foto.url" download></p>
+    
+    <p class="lead">
+   
+       <a class="btn btn-primary btn-lg" [href]="foto.hdurl" role="button">Ver en hd</a>
+
+    </p>
+
+
+</div>
